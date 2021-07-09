@@ -1,7 +1,9 @@
 {
     "name": "nigatedev/nigatedev",
-    "description": "Nigatedev framework mean save time !",
+    "description": "Nigatedev PHP framework for saving time !",
     "type": "project",
+    "keywords": ["framework", "nigatedev"],
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Nigatedev\\": "src/"
@@ -10,11 +12,12 @@
     "authors": [
         {
             "name": "Abass Ben Cheik",
-            "email": "abass@todaysdev.com"
+            "email": "abass@todaysdev.com",
+            "role": "Lead Developer"
         }
     ],
     "require": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3"
     },
     
     "require-dev": {
@@ -23,5 +26,6 @@
     },
     "scripts": {
       "make:form": "bin/console make form"
-    }
+    },
+    "minimum-stability": "dev"
 }
