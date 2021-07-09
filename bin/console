@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+/*
+ * This file is part of NigateDev package.
+ * 
+ * @Author Abass Ben Cheik <abass@todaysdev.com>
+ * 
+ */
+if (in_array($argv[1], array("-h", "--help"))) {
+	
+} elseif(in_array($argv[1], ["make"])){
+    $getMaker = $argv;
+    require_once "bin/maker";
+} else {
+  echo "Unknown command";
+}
+
+?>

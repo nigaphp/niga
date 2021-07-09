@@ -1,0 +1,27 @@
+{
+    "name": "nigatedev/nigatedev",
+    "description": "Nigatedev framework mean save time !",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Nigatedev\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Abass Ben Cheik",
+            "email": "abass@todaysdev.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^3.6",
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+      "make:form": "bin/console make form"
+    }
+}
