@@ -2,6 +2,7 @@
     "name": "nigatedev/nigatedev",
     "description": "Nigatedev framework mean save time !",
     "type": "project",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "Nigatedev\\": "src/"
@@ -10,7 +11,8 @@
     "authors": [
         {
             "name": "Abass Ben Cheik",
-            "email": "abass@todaysdev.com"
+            "email": "abass@todaysdev.com",
+            "role": "Lead Developer"
         }
     ],
     "require": {
@@ -23,5 +25,6 @@
     },
     "scripts": {
       "make:form": "bin/console make form"
-    }
+    },
+    "minimum-stability": "dev"
 }
