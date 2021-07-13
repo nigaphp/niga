@@ -10,7 +10,7 @@ To use NigateDev framework please make sure that the following items are install
 It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
 <br /> 
 
-**Note:** Nigatedev framework is not ready for production application right now. 
+**Note:** Nigatedev framework is not ready for production application at this time. 
 <br />
 
 If you already have composer you can use the following command to create your web application with Nigatedev framework.
