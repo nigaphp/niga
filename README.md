@@ -31,4 +31,4 @@ You are now ready to download the dependencies by typing ```composer update```
 To know which dependencies are required, please consult the [composer.json file.](https://github.com/nigatedev/nigatedev/blob/master/composer.json) 
 
 ## Contact
-If you want to contribute to this famous framework OR found any bug Please contact us here abass@todaysdev.com, nigatedev@gmail.com
+If you want to contribute to this famous framework or if found you found a bug, Please contact us here abass@todaysdev.com / nigatedev@gmail.com
