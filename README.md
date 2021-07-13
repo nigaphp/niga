@@ -19,7 +19,7 @@ If you already have composer you can use the following command to create your we
 ```composer create-project nigatedev/nigatedev my-blog```
 <br />
 
-will create you a web application into my-blog directory on your machine. for fully documentation take a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
+will create a web application in the my-blog directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
 <br />
 
 Then browse to that directory ```cd my-blog``` 
