@@ -9,7 +9,7 @@ define('APP_ROOT_DIR', dirname(__DIR__));
 
 require_once APP_ROOT_DIR. "/vendor/autoload.php";
 
-use Nigatedev\Application as App;
+use Nigatedev\Core\Application as App;
 
 /**
 * Create a new Application from the main core application package
@@ -18,16 +18,16 @@ use Nigatedev\Application as App;
 $app = new App();
 
 /**
+ * Mappe your route with template
 * @return render route "/" E.g: http://localhost:8000/ and output Home to the client
 */
-$app->router->get("/", function() {
-  return "<h1>Home</h1>";
-});
+$app->router->get("/", "home");
 
 /**
+ * Mappe your route without template
 * @return render route "/contact" E.g: http://localhost:8000/contact and output Contact to the client
 */
-$app->router->get("/contact", function() {
+$app->router->get("/news", function() {
   return "<h1>Contact</h1>";
 });
 
