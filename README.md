@@ -7,10 +7,10 @@ To use NigateDev framework please make sure that the following items are install
 * **PHP>=7.3**
 
 ## Basic usage
-It is highly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
+It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
 <br /> 
 
-**Note:** Nigatedev framework is not ready for production application right now. 
+**Note:** Nigatedev framework is not ready for production application at this time. 
 <br />
 
 If you already have composer you can use the following command to create your web application with Nigatedev framework.
@@ -19,7 +19,16 @@ If you already have composer you can use the following command to create your we
 ```composer create-project nigatedev/nigatedev my-blog```
 <br />
 
-will create you a web application into my-blog directory on your machine. for fully documentation take a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
+will create a web application in the my-blog directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
+<br />
+
+Then browse to that directory ```cd my-blog``` 
+</br >
+
+You are now ready to download the dependencies by typing ```composer update```
+<br />
+
+To know which dependencies are required, please consult the [composer.json file.](https://github.com/nigatedev/nigatedev/blob/master/composer.json) 
 
 ## Contact
-If you want to contribute to this famous framework OR found any bug Please contact us here abass@todaysdev.com, nigatedev@gmail.com
+If you want to contribute to this famous framework or if you found you found a bug, Please contact us here abass@todaysdev.com / nigatedev@gmail.com
