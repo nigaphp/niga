@@ -24,14 +24,6 @@ $app = new App();
 $app->router->get("/", "home");
 
 /**
- * Mappe your route without template
-* @return render route "/contact" E.g: http://localhost:8000/contact and output Contact to the client
-*/
-$app->router->get("/news", function() {
-  return "<h1>Contact</h1>";
-});
-
-/**
 * @return Run request uri / Throw HTTP Not Found Exception from Nigatedev\Core\Request
 */
 $app->run();
