@@ -13,7 +13,6 @@ use Nigatedev\Trunk;
 use Nigatedev\Core\App;
 use Nigatedev\Maker\Make;
 
-var_dump(new Make());
 /**
  * We recommend using the command line interface to generate route / controller
  * E.g: this command [bin/controller make:controller HomeController] 
