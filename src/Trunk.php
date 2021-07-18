@@ -12,9 +12,9 @@ use Nigatedev\Diyan\Diyan;
 /**
  * Trunk class
  *
- * @Author Abass Ben Cheik <abass@todaysdev.com>
+ * @author Abass Ben Cheik <abass@todaysdev.com>
  *
- * @Package Nigatedev
+ * @package Nigatedev
  */
 class Trunk extends Diyan
 {
@@ -58,7 +58,7 @@ class Trunk extends Diyan
         if($config["controllerDir"]) {
             return App::$app->run();
         } 
-        return $this->errorNotFound("Fatal error: <code>src/Controller</code> is not a directory !!!");
+        return $this->errorNotFound("Fatal error: <code>src/Controller/</code> is not a directory !!!");
     }
 
     /**
