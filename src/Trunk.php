@@ -5,7 +5,7 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
-namespace Nigatedev;
+namespace App;
 
 use Nigatedev\Core\App;
 use Nigatedev\Diyan\Diyan;

@@ -4,14 +4,11 @@
  * 
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
- 
-namespace Nigatedev\Controller;
 
 require_once dirname(__DIR__). "/vendor/autoload.php";
 
-use Nigatedev\Trunk;
+use App\Trunk;
 use Nigatedev\Core\App;
-use Nigatedev\Maker\Make;
 
 /**
  * We recommend using the command line interface to generate route / controller
@@ -23,4 +20,4 @@ $app = new App(dirname(__DIR__));
 /**
  * Run the app
  */
-$app->trunk();
+$app->run();
