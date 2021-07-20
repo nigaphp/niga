@@ -4,7 +4,8 @@ written for saving time by [**Abass Ben Cheik**](https://todaysdev.com/en/about/
 
 ## Prerequisites
 To use NigateDev framework please make sure that the following items are installed on your machine.
-* **PHP>=7.3**
+* **PHP>=^7.3**
+* **diyan>=^1.0**
 
 ## Basic usage
 It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
