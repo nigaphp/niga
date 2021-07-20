@@ -6,7 +6,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Nigatedev\\": "src/"
+            "App\\": "src/"
         }
     },
     "authors": [
