@@ -8,11 +8,13 @@
       .be-container{text-align:center;margin:15px}
       .be-color-dg{color:#ff000b}
       .be-color-py{color:#00ccff}
-       code{background:#6663;border-radius:2px;padding:1px}
+       code, .be-code{background:#6663;border-radius:2px;padding:1px}
     </style>
     <title>{{title}}</title>
   </head>
   <body>
-   {{body}}
+    <div class="be-container">
+       {{body}}
+    </div>
   </body>
 </html>
