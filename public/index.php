@@ -5,19 +5,14 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
-require_once dirname(__DIR__). "/vendor/autoload.php";
+define('APP_ROOT', dirname(__DIR__));
 
-use App\Trunk;
+require_once APP_ROOT. "/vendor/autoload.php";
+
 use Nigatedev\Core\App;
 
-/**
- * We recommend using the command line interface to generate route / controller
- * E.g: this command [bin/controller make:controller HomeController] 
- * will generate you a valid route that point to [/home] route and a controller class into src/Controller directory
- */
-$app = new App(dirname(__DIR__));
+$app = new App(APP_ROOT);
 
-/**
- * Run the app
- */
+$app->router->load(APP_ROOT."/config/loader.php");
+    
 $app->run();
