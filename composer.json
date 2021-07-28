@@ -19,7 +19,8 @@
     "require": {
         "php": "^7.3|^8.0",
         "nigatedev/core": "^1.0",
-        "nigatedev/maker": "^1.0"
+        "nigatedev/maker": "^1.0",
+        "vlucas/phpdotenv": "^5.3"
     },
     
     "require-dev": {
