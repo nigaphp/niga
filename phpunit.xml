@@ -1,0 +1,7 @@
+<phpunit>
+  <testsuites>
+    <testsuite name="nigatedev">
+      <directory>tests</directory>
+    </testsuite>
+  </testsuites>
+</phpunit>
