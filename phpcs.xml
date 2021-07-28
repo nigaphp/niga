@@ -1,0 +1,7 @@
+<?xml version="1.1" ?>
+<ruleset name ="nigatedev">
+  <arg name="colors"/>
+  <arg value="p"/>
+  <file>src</file>
+  <rule ref="PSR2"></rule> 
+</ruleset>
