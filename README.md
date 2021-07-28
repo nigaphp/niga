@@ -31,7 +31,7 @@ will create a web application in the my-blog directory on your machine. For a co
 **2. shortcut** <br />
 ```bin/console m:c```
 <br />
-**3. specify the name of controller** <br />
+**3. specify the name of the controller** <br />
 ```bin/console m:c HomeController```
 <br />
 
