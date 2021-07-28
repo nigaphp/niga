@@ -24,7 +24,7 @@ will create a web application in the my-blog directory on your machine. For a co
 <br />
 
 ### Create a controller using CLI (Command Line Interface)
-#### You have different ways to do it.
+#### Since the [nigatedev/maker^1.0.3](https://github.com/nigatedev/maker) you have different ways to do this.
 **1. default** <br />
 ```bin/console make:controller```
 <br />
