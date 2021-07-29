@@ -7,6 +7,10 @@ To use NigateDev framework please make sure that the following items are install
 * **PHP=>7.3**
 * **composer ^2.0**
 
+## Installation
+```composer create-project nigatedev/nigatedev3```
+<br />
+
 ## Basic usage
 It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
 <br /> 
