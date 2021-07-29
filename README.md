@@ -8,7 +8,7 @@ To use NigateDev framework please make sure that the following items are install
 * **composer ^2.0**
 
 ## Installation
-```composer create-project nigatedev/nigatedev3```
+```composer create-project nigatedev/nigatedev```
 <br />
 
 ## Basic usage
