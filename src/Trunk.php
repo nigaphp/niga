@@ -9,6 +9,7 @@ namespace App;
 
 use Nigatedev\Core\App;
 use Nigatedev\Diyan\Diyan;
+
 /**
  * Trunk class
  *
@@ -55,9 +56,9 @@ class Trunk extends Diyan
     public function configChecker()
     {
         $config = $this->getConfig();
-        if($config["controllerDir"]) {
+        if ($config["controllerDir"]) {
             return App::$app->run();
-        } 
+        }
         return $this->errorNotFound("Fatal error: <code>src/Controller/</code> is not a directory !!!");
     }
 
