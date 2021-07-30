@@ -56,8 +56,8 @@ The last command will create two files and update the controller injector.
 <br />
 
 ```bash
-src/Controller/HomeController
-views/home.php
+1. src/Controller/HomeController.php
+2. views/home.php
 ```
 <br />
 
