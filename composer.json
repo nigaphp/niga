@@ -20,7 +20,8 @@
         "php": "^7.3|^8.0",
         "nigatedev/core": "^1.0",
         "nigatedev/maker": "^1.0",
-        "vlucas/phpdotenv": "^5.3"
+        "vlucas/phpdotenv": "^5.3",
+        "guzzlehttp/psr7": "^2.0"
     },
     
     "require-dev": {
