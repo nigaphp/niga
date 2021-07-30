@@ -4,11 +4,15 @@ written for saving time by [**Abass Ben Cheik**](https://todaysdev.com/en/about/
 
 ## Prerequisites
 To use NigateDev framework please make sure that the following items are installed on your machine.
-* **PHP=>7.3**
-* **composer ^2.0**
+```json
+PHP => 7.3
+composer => 2.0
+```
 
 ## Installation
-```composer create-project nigatedev/nigatedev```
+```bash
+$ composer create-project nigatedev/nigatedev
+```
 <br />
 
 ## Basic usage
@@ -21,7 +25,9 @@ It is strongly recommend to use [composer](https://getcomposer.org/) to install 
 If you already have composer you can use the following command to create your web application with Nigatedev framework.
 <br />
 
-```composer create-project nigatedev/nigatedev my-blog```
+```bash
+$ composer create-project nigatedev/nigatedev my-blog
+```
 <br />
 
 will create a web application in the my-blog directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
@@ -29,23 +35,30 @@ will create a web application in the my-blog directory on your machine. For a co
 
 ### Create a controller using CLI (Command Line Interface)
 #### Since the [nigatedev/maker^1.0.3](https://github.com/nigatedev/maker) you have different ways to do this.
-**1. default** <br />
-```bin/console make:controller```
-<br />
-**2. shortcut** <br />
-```bin/console m:c```
-<br />
-**3. specify the name of the controller** <br />
-```bin/console m:c HomeController```
+##### 1. default
+
+```bash
+$ bin/console make:controller
+```
+##### 2. shortcut
+
+```bash
+$ bin/console m:c
+```
+##### 3. specify the name of the controller 
+
+```bash
+$ bin/console m:c HomeController
+```
 <br />
 
 The last command will create two files and update the controller injector.
 <br />
 
-**1.** ``src/Controller/HomeController``
-<br />
-
-**2.** ``views/home.php``
+```bash
+src/Controller/HomeController
+views/home.php
+```
 <br />
 
 To know which dependencies are required, please consult the [composer.json file.](https://github.com/nigatedev/nigatedev/blob/master/composer.json) 
