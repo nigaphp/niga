@@ -21,7 +21,8 @@
         "nigatedev/core": "^1.0",
         "nigatedev/maker": "^1.0",
         "vlucas/phpdotenv": "^5.3",
-        "guzzlehttp/psr7": "^2.0"
+        "guzzlehttp/psr7": "^2.0",
+        "nigatedev/filesystem": "^1.0"
     },
     
     "require-dev": {
