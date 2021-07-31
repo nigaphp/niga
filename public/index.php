@@ -5,14 +5,8 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
-define('APP_ROOT', dirname(__DIR__));
+require_once dirname(__DIR__)."/vendor/autoload.php";
 
-require_once APP_ROOT. "/vendor/autoload.php";
-
-use Nigatedev\Core\App;
-
-$app = new App(APP_ROOT);
-
-$app->router->load(APP_ROOT."/config/loader.php");
-    
+$app = new Nigatedev\Core\App(dirname(__DIR__));
+$app->router->load(dirname(__DIR__)."/config/loader.php");
 $app->run();
