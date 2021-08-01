@@ -1,4 +1,4 @@
-<phpunit>
+<phpunit colors="true" verbose="true" testdox="true">
   <testsuites>
     <testsuite name="nigatedev">
       <directory>tests</directory>
