@@ -45,6 +45,11 @@ $ bin/console make:controller
 ```bash
 $ bin/console m:c
 ```
+Or
+```bash
+$ bin/console make:c
+```
+
 ##### 3. specify the name of the controller 
 
 ```bash
@@ -61,6 +66,18 @@ The last command will create two files and update the controller injector.
 ```
 <br />
 
+### [Nigatedev Dumper](https:/github.com/nigatedev/dumper)
+
+One of the powerful function called ``` dump() ``` is available anywhere in your project, and can be used to replace the default php ```var_dump() ``` function.
+
+#### Usage example
+
+```php
+$string = "Hello John Doe";
+dump($string);
+```
+
+<br />
 To know which dependencies are required, please consult the [composer.json file.](https://github.com/nigatedev/nigatedev/blob/master/composer.json) 
 
 ## Contact
