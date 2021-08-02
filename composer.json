@@ -7,7 +7,8 @@
     "autoload": {
         "psr-4": {
             "App\\": "src/"
-        }
+        },
+        "files":["config/functions.php"]
     },
     "authors": [
         {
@@ -22,12 +23,12 @@
         "nigatedev/maker": "^1.0",
         "vlucas/phpdotenv": "^5.3",
         "guzzlehttp/psr7": "^2.0",
-        "nigatedev/filesystem": "^1.0",
-        "nigatedev/dumper": "^1.0"
+        "nigatedev/filesystem": "^1.0"
     },
     
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6",
+        "nigatedev/dumper": "^1.0",
         "phpunit/phpunit": "^9.5"
     },
     "minimum-stability": "dev",
