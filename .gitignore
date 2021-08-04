@@ -1,5 +1,17 @@
+### dependencies ###
 vendor/
 composer.lock
-.env
-.phpunit.result.cache
+### END ###
 
+### phpdotenv/phpdotenv ###
+.env
+### END ###
+
+### squizlabs/php_codesniffer ###
+phpcs.xml
+### END ###
+
+### phpunit/phpunit ###
+phpunit.xml
+.phpunit.result.cache
+### END ###
