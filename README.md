@@ -8,7 +8,7 @@ written for saving time by [**Abass Ben Cheik**](https://todaysdev.com/en/about/
 ## Prerequisites
 To use NigateDev framework please make sure that the following items are installed on your machine.
 ```json
-PHP => 7.3
+PHP ^7.3|^8.0
 PDO PHP extension
 composer => 2.0
 ```
