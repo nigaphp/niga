@@ -21,6 +21,7 @@
         "php": "^7.3|^8.0",
         "nigatedev/core": "^1.0",
         "nigatedev/maker": "^1.0",
+        "nigatedev/diyan": "^1.0",
         "vlucas/phpdotenv": "^5.3",
         "guzzlehttp/psr7": "^2.0",
         "nigatedev/filesystem": "^1.0"
@@ -29,8 +30,9 @@
     "require-dev": {
         "squizlabs/php_codesniffer": "^3.6",
         "nigatedev/dumper": "^1.0",
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.5",
+        "phpstan/phpstan": "^0.12.94"
     },
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "prefer-stable": true
 }
