@@ -31,7 +31,8 @@
         "squizlabs/php_codesniffer": "^3.6",
         "nigatedev/dumper": "^1.0",
         "phpunit/phpunit": "^9.5",
-        "phpstan/phpstan": "^0.12.94"
+        "phpstan/phpstan": "^0.12.94",
+        "filp/whoops": "^2.14"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
