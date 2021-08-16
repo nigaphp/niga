@@ -26,14 +26,16 @@
         "squizlabs/php_codesniffer": "^3.6",
         "phpunit/phpunit": "^9.5",
         "phpstan/phpstan": "^0.12.94",
-        "filp/whoops": "^2.14",
-        "nigatedev/dumper": "^1.0"
+        "filp/whoops": "^2.14"
     },
     "scripts": {
-      "phpstan4": "phpstan analyse public/ src/",
       "post-root-package-install": [
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ]
+        ],
+      "phpstan": "phpstan analyse public/ src/",
+      "tests": "phpunit tests/",
+      "sniffer": "phpcs",
+      "fix-sniff": "phpcbf"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
