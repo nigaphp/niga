@@ -26,7 +26,8 @@
         "squizlabs/php_codesniffer": "^3.6",
         "phpunit/phpunit": "^9.5",
         "phpstan/phpstan": "^0.12.94",
-        "filp/whoops": "^2.14"
+        "filp/whoops": "^2.14",
+        "nigatedev/dumper": "^1.0"
     },
     "scripts": {
       "phpstan4": "phpstan analyse public/ src/",

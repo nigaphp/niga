@@ -7,8 +7,8 @@ declare(strict_types=1);
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
-use Nigatedev\Core\App;
-use Nigatedev\Core\Debugger\Debugger;
+use Nigatedev\App;
+use Nigatedev\Debugger\Debugger;
 
 require_once dirname(__DIR__)."/vendor/autoload.php";
 
