@@ -6,9 +6,11 @@
  * @author Abass Ben Cheik <abass@todaysdev.com>
  */
  
- require dirname(__DIR__) . '/vendor/autoload.php';
+ require __DIR__. "/vendor/autoload.php";
  
- use Nigatedev\Maker\Make;
+ use Nigatedev\Console\Maker\Make;
+ 
+ use Nigatedev\Console\Colors;
  
 (new Make())->make($argv);
 

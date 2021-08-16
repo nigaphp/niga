@@ -1,5 +1,5 @@
 <?php
-if(!function_exists("dump") && !is_file(dirname(__DIR__)."/vendor/nigatedev/dumper/src/functions.php")){
+if(!function_exists("dump") && !is_file(dirname(__DIR__)."/vendor/nigatedev/framework/src/Dumper/functions.php")){
   function dump(){
     echo "<div><span style='color:#ff000b'>Fatal error:</span> 
     Can't use [nigatedev/dumper] because it is not installed, 
@@ -11,4 +11,4 @@ if(!function_exists("dump") && !is_file(dirname(__DIR__)."/vendor/nigatedev/dump
     return;
 }
 
-require_once dirname(__DIR__)."/vendor/nigatedev/dumper/src/functions.php";
+require_once dirname(__DIR__)."/vendor/nigatedev/framework/src/Dumper/functions.php";
