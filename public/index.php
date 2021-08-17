@@ -9,15 +9,17 @@ declare(strict_types=1);
 
 use Nigatedev\App;
 use Nigatedev\Debugger\Debugger;
+use Nigatedev\Support\File;
 
 require_once dirname(__DIR__)."/vendor/autoload.php";
 
-if (file_exists(dirname(__DIR__)."/.env")) {
-    (Dotenv\Dotenv::createImmutable(dirname(__DIR__)))->load();
+if (File::isFile(dirname(__DIR__)."/.env")) {
+
+ (Dotenv\Dotenv::createImmutable(dirname(__DIR__)))->load();
  
-    if (isset($_ENV["DEBUG_MODE"]) && $_ENV["DEBUG_MODE"] == true) {
-        Debugger::enableDebugMode();
-    }
+ if(isset($_ENV["DEBUG_MODE"]) && (bool)$_ENV["DEBUG_MODE"] === true){
+    Debugger::enableDebugMode();
+ }
 }
 
 $app = new App(dirname(__DIR__));
