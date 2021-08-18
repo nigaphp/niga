@@ -7,6 +7,7 @@ declare(strict_types=1);
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
 
+use App\Trunk;
 use Nigatedev\App;
 use Nigatedev\Debugger\Debugger;
 use Nigatedev\Support\File;
@@ -22,6 +23,11 @@ if (File::isFile(dirname(__DIR__)."/.env")) {
  }
 }
 
-$app = new App(dirname(__DIR__));
+/** App start */
+$app = new App(dirname(__DIR__), (new Trunk())->globals());
+
+/** App load */
 $app->router->load(App::$APP_ROOT."/config/loader.php");
+
+/** App run */
 $app->run();
