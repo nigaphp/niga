@@ -12,11 +12,13 @@ use Nigatedev\App;
 use Nigatedev\Debugger\Debugger;
 use Nigatedev\Support\File;
 
-require_once dirname(__DIR__)."/vendor/autoload.php";
+define("ROOT_DIR", realpath(dirname(__DIR__)));
 
-if (File::isFile(dirname(__DIR__)."/.env")) {
+require_once ROOT_DIR."/vendor/autoload.php";
 
- (Dotenv\Dotenv::createImmutable(dirname(__DIR__)))->load();
+if (File::isFile(ROOT_DIR."/.env")) {
+
+ (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
  
  if(isset($_ENV["DEBUG_MODE"]) && (bool)$_ENV["DEBUG_MODE"] === true){
     Debugger::enableDebugMode();
@@ -24,10 +26,10 @@ if (File::isFile(dirname(__DIR__)."/.env")) {
 }
 
 /** App start */
-$app = new App(dirname(__DIR__), (new Trunk())->globals());
+$app = new App(ROOT_DIR, (new Trunk())->globals());
 
 /** App load */
-$app->router->load(App::$APP_ROOT."/config/loader.php");
+$app->router->load(ROOT_DIR."/config/loader.php");
 
 /** App run */
 $app->run();
