@@ -15,3 +15,7 @@ phpcs.xml
 phpunit.xml
 .phpunit.result.cache
 ### END ###
+
+### phpstan ###
+phpstan.neon
+### END ###
