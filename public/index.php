@@ -30,7 +30,7 @@ if (File::isFile(ROOT_DIR."/.env")) {
 }
 
 /** App start */
-$app = new App(ROOT_DIR, (new Trunk())->configGlobals());
+$app = new App(ROOT_DIR, (new Trunk())->globConfig());
 
 /** App load */
 $app->router->load(ROOT_DIR."/config/loader.php");
