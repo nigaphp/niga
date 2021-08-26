@@ -19,18 +19,4 @@ class Trunk extends Configurator {
     $this->setViewsDir("/views");
   }
   
-  
-  /* Uncomment this function to overwrite default database configuration
-   
-   public function globals()
-    {
-      return  [
-        "db" => [
-              "dsn"      => $_ENV["DSN"] ?? "",
-              "user"     => $_ENV["DB_USER"] ?? "",
-              "password" => $_ENV["DB_PASSWORD"] ?? ""
-            ]
-       ];
-    }
-  */ 
 }

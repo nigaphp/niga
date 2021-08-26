@@ -1,16 +1,20 @@
 <?php
-declare(strict_types=1);
-
-/**
+/*
  * This file is part of the Nigatedev PHP framework package
  *
  * (c) Abass Ben Cheik <abass@todaysdev.com>
+ *
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
+
+declare(strict_types=1);
 
 use App\Trunk;
 use Nigatedev\App;
 use Nigatedev\Debugger\Debugger;
 use Nigatedev\Support\File;
+use Nigatedev\Database\Db;
 
 define("ROOT_DIR", realpath(dirname(__DIR__)));
 
@@ -26,10 +30,10 @@ if (File::isFile(ROOT_DIR."/.env")) {
 }
 
 /** App start */
-$app = new App(ROOT_DIR, (new Trunk())->globals());
+$app = new App(ROOT_DIR, (new Trunk())->configGlobals());
 
 /** App load */
 $app->router->load(ROOT_DIR."/config/loader.php");
-
+      
 /** App run */
 $app->run();
