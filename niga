@@ -1,7 +1,7 @@
 #!/usr/bin/env php
 <?php
 /*
- * This file is part of Nigatedev PHP framework package.
+ * This file is part of Nigatedev framework package.
  * 
  * @author Abass Ben Cheik <abass@todaysdev.com>
  */
@@ -9,8 +9,6 @@
  require __DIR__. "/vendor/autoload.php";
  
  use Nigatedev\Console\Maker\Make;
- 
- use Nigatedev\Console\Colors;
  
 (new Make())->make($argv);
 
