@@ -6,6 +6,5 @@
   <arg name="report" value="summary"/>
   <ini name="memory_limit" value="64M"/>
   <file>src/</file>
-  <file>public/index.php</file> 
   <rule ref="PSR2"></rule>
 </ruleset>

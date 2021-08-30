@@ -21,12 +21,11 @@ define("ROOT_DIR", realpath(dirname(__DIR__)));
 require_once ROOT_DIR."/vendor/autoload.php";
 
 if (File::isFile(ROOT_DIR."/.env")) {
-
- (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
+    (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
  
- if(isset($_ENV["DEBUG_MODE"]) && (bool)$_ENV["DEBUG_MODE"] === true){
-    Debugger::enableDebugMode();
- }
+    if (isset($_ENV["DEBUG_MODE"]) && (bool)$_ENV["DEBUG_MODE"] === true) {
+        Debugger::enableDebugMode();
+    }
 }
 
 /** App start */

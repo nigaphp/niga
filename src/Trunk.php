@@ -3,20 +3,20 @@ namespace App;
 
 use Nigatedev\Config\Configurator;
 
-class Trunk extends Configurator {
+class Trunk extends Configurator
+{
   
   /**
-   * Constructor 
+   * Constructor
    */
-  public function __construct()
-  {
-    parent::__construct(dirname(__DIR__));
+    public function __construct()
+    {
+        parent::__construct(dirname(__DIR__));
     
-    /** Default controllers directory */
-    $this->setControllerDir("/src/Controller");
+      /** Default controllers directory */
+        $this->setControllerDir("/src/Controller");
     
-    /** Default views directory */
-    $this->setViewsDir("/views");
-  }
-  
+      /** Default views directory */
+        $this->setViewsDir("/views");
+    }
 }

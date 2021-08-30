@@ -29,13 +29,12 @@
         "filp/whoops": "^2.14"
     },
     "scripts": {
-      "post-root-package-install": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
-        ],
+      "dev-server": "php -S localhost:8000 -t public/",
+      "post-root-package-install": ["@php -r \"file_exists('.env') || copy('.env.example', '.env');\""],
       "phpstan": "phpstan analyse public/ src/",
       "tests": "phpunit tests/",
-      "sniffer": "phpcs",
-      "fix-sniff": "phpcbf"
+      "phpcs-show": "phpcs",
+      "phpcs-fix": "phpcbf"
     },
     "minimum-stability": "stable",
     "prefer-stable": true
