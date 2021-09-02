@@ -1,7 +1,7 @@
 <?php
 namespace App;
 
-use Nigatedev\Config\Configurator;
+use Nigatedev\FrameworkBundle\Config\Configurator;
 
 class Trunk extends Configurator
 {

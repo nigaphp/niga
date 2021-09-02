@@ -11,9 +11,9 @@
 declare(strict_types=1);
 
 use App\Trunk;
-use Nigatedev\App;
-use Nigatedev\Debugger\Debugger;
-use Nigatedev\Support\File;
+use Nigatedev\FrameworkBundle\Application\App;
+use Nigatedev\FrameworkBundle\Debugger\Debugger;
+use Nigatedev\Framework\Support\File;
 use Nigatedev\Database\Db;
 
 define("ROOT_DIR", realpath(dirname(__DIR__)));
