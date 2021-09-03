@@ -37,19 +37,19 @@ will create a web application in the my-blog directory on your machine. For a co
 #### Since the [nigatedev/maker^1.0.3](https://github.com/nigatedev/maker) you have different ways to do this.
 ##### 1. default
 ```bash
-$ bin/console make:controller
+$ bin/niga make:controller
 ```
 ##### 2. shortcut
 ```bash
-$ bin/console m:c
+$ bin/niga m:c
 ```
 Or
 ```bash
-$ bin/console make:c
+$ bin/niga make:c
 ```
 ##### 3. specify the name of the controller 
 ```bash
-$ bin/console m:c HomeController
+$ bin/niga m:c HomeController
 ```
 
 The last command will create two files and update the controller injector.
