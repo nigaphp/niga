@@ -10,8 +10,12 @@
  * file that was distributed with this source code.
  */
  
- if(file_exists(dirname(__DIR__).'/../../autoload') || file_exists(dirname(__DIR__).'/vendor/autoload.php')) {
-    foreach ([dirname(__DIR__).'/../../autoload.php', dirname(__DIR__).'/vendor/autoload.php'] as $loder) {
+ if(file_exists(dirname(__DIR__).'/../../autoload') 
+    || file_exists(dirname(__DIR__).'/vendor/autoload.php')) {
+    foreach ([
+    dirname(__DIR__).'/../../autoload.php',
+    dirname(__DIR__).'/vendor/autoload.php'
+    ] as $loder) {
         if(file_exists($loder)) {
            require_once $loder;
         break;
