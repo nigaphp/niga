@@ -10,6 +10,10 @@
         },
         "files":["config/functions.php"]
     },
+    "autoload-dev": {
+        "psr-4": {
+            "App\\Tests\\": "tests/"
+        },
     "authors": [
         {
             "name": "Abass Ben Cheik",
