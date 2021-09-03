@@ -1,15 +1,29 @@
 #!/usr/bin/env php
 <?php
+
 /*
- * This file is part of Nigatedev framework package.
- * 
+ * This file is part of the Nigatedev framework package.
+ *
  * (c) Abass Ben Cheik <abass@todaysdev.com>
+ * 
+ * For the full copyright and license information, please view the LICENSE
+ * file that was distributed with this source code.
  */
  
- require dirname(__DIR__)."/vendor/autoload.php";
+ if(file_exists(dirname(__DIR__).'/../../autoload') || file_exists(dirname(__DIR__).'/vendor/autoload.php')) {
+    foreach ([dirname(__DIR__).'/../../autoload.php', dirname(__DIR__).'/vendor/autoload.php'] as $loder) {
+        if(file_exists($loder)) {
+           require_once $loder;
+        break;
+        }
+  }
+} else {
+    die(
+    "\33[41mFATAL:\nNigatedev (CLI) can't find composer auto loader!"
+    ."\33[0m\n\n\33[44mINFO:\nPlease try 'composer update' OR 'composer install'"
+    );
+}
  
- use Nigatedev\Framework\Console\Maker\Make;
- 
-(new Make())->make($argv);
+(new Nigatedev\Framework\Console\Maker\Make())->make($argv);
 
 ?>
