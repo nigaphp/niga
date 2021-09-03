@@ -6,7 +6,7 @@
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  */
  
- require __DIR__. "/vendor/autoload.php";
+ require dirname(__DIR__)."/vendor/autoload.php";
  
  use Nigatedev\Framework\Console\Maker\Make;
  
