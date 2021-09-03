@@ -1,3 +1,7 @@
+### App environment ###
+env.test.yaml
+### END ###
+
 ### dependencies ###
 vendor/
 composer.lock
