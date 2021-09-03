@@ -19,8 +19,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "nigatedev/framework-bundle": "^1.0",
-        "nigatedev/yaml": "^1.0"
+        "nigatedev/framework-bundle": "^1.0"
     },
     
     "require-dev": {
