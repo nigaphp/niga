@@ -13,10 +13,11 @@ declare(strict_types=1);
 use App\Trunk;
 use Nigatedev\FrameworkBundle\Application\App;
 use Nigatedev\FrameworkBundle\Debugger\Debugger;
+use Nigatedev\FrameworkBundle\Config\Loader;
 use Nigatedev\Framework\Support\File;
 use Nigatedev\Database\Db;
 
-define("ROOT_DIR", realpath(dirname(__DIR__)));
+define("ROOT_DIR", dirname(__DIR__));
 
 require_once ROOT_DIR."/vendor/autoload.php";
 
@@ -27,12 +28,11 @@ if (File::isFile(ROOT_DIR."/.env")) {
         Debugger::enableDebugMode();
     }
 }
-
 /** App start */
 $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 
 /** App load */
-$app->router->load(ROOT_DIR."/config/loader.php");
-      
+$app->router->load(Loader::load("loader.php"));
+
 /** App run */
 $app->run();
