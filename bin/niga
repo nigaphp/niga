@@ -30,4 +30,9 @@
     exit(1);
 }
 
-(new Nigatedev\Framework\Console\Maker\Make())->make($argv);
+(new Nigatedev\Framework\Console\Maker\Make([
+'controller' => [
+'root_dir' => "../",
+'dir'      => "../src/Controller"
+]
+]))->make($argv);
