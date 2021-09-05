@@ -11,11 +11,13 @@
 declare(strict_types=1);
 
 use App\Trunk;
-use Nigatedev\FrameworkBundle\Application\App;
-use Nigatedev\FrameworkBundle\Debugger\Debugger;
-use Nigatedev\FrameworkBundle\Config\Loader;
+use Nigatedev\FrameworkBundle\ {
+Application\App,
+Debugger\Debugger,
+Config\Loader
+};
+
 use Nigatedev\Framework\Support\File;
-use Nigatedev\Database\Db;
 
 define("ROOT_DIR", dirname(__DIR__));
 
