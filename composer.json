@@ -52,6 +52,6 @@
       "phpcs-show": "phpcs",
       "phpcs-fix": "phpcbf"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true
 }
