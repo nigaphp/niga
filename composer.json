@@ -19,6 +19,7 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
+        "ext-pdo": "*",
         "nigatedev/framework-bundle": "^1.0"
     },
     "autoload-dev": {
@@ -26,7 +27,6 @@
             "App\\Tests\\": "tests/"
         }
     },
-    
     "config": {
         "optimize-autoloader": true,
         "preferred-install": {
