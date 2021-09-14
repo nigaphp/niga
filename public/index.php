@@ -1,4 +1,4 @@
-<?php
+<?php declare(strict_types = 1);
 /*
  * This file is part of the Nigatedev PHP framework package
  *
@@ -8,20 +8,22 @@
  * file that was distributed with this source code.
  */
 
-declare(strict_types=1);
-
 use App\Trunk;
-use Nigatedev\FrameworkBundle\ {
-Application\App,
-Debugger\Debugger,
-Config\Loader
-};
+use Nigatedev\FrameworkBundle\Application\App;
+use Nigatedev\FrameworkBundle\Debugger\Debugger;
+use Nigatedev\FrameworkBundle\Config\Loader;
 
 use Nigatedev\Framework\Support\File;
 
 define("ROOT_DIR", dirname(__DIR__));
 
-require_once ROOT_DIR."/vendor/autoload.php";
+$autoLoader = ROOT_DIR."/vendor/autoload.php";
+
+if (!file_exists($autoLoader)) {
+    throw new RuntimeException('Install dependencies with "composer install" to run this script.');
+}
+
+require_once($autoLoader);
 
 if (File::isFile(ROOT_DIR."/.env")) {
     (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
@@ -30,6 +32,7 @@ if (File::isFile(ROOT_DIR."/.env")) {
         Debugger::enableDebugMode();
     }
 }
+
 /** App start */
 $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 

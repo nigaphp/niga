@@ -1,0 +1,14 @@
+{
+    "connection": {
+        "driver": "pdo_sqlite",
+        "path": "data/database.sqlite"
+    },
+    "annotation": {
+        "dir": ["src/Entity"],
+        "mode": true,
+        "proxyDir": null,
+        "cache": null,
+        "reader": false
+    }
+
+}
