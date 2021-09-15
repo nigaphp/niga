@@ -1,0 +1,5 @@
+{
+    "app_name": "Nigatedev",
+    "app_version": "1.0",
+    "default_template": "twig"
+}

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% block stylesheets %}
+    <link rel="stylesheet" href="../build/bundle.css" type="text/css" media="all" />
+    {% endblock %}
+    <title>{% block title%}Welcome - made by Nigatedev framework{% endblock %}</title>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+
+    <footer>
+        {% block footer %}
+        {% endblock %}
+    </footer>
+
+    {% block javascripts %}
+    {% endblock %}
+</body>
+</html>
