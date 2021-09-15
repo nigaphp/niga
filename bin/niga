@@ -24,15 +24,10 @@
 } else {
     fwrite(STDERR,
     "\33[41mFATAL:\nNigatedev (CLI) can't find composer auto loader!"
-    ."\33[0m\n\n\33[44mINFO:\nPlease try 'composer update' OR 'composer install'"
+    ."\33[0m\n\n\33[44mINFO:\nPlease install dependencies with 'composer install' to run this script"
     .PHP_EOL);
     
     exit(1);
 }
 
-(new Nigatedev\Framework\Console\Maker\Make([
-'controller' => [
-'root_dir' => "../",
-'dir'      => "../src/Controller"
-]
-]))->make($argv);
+(new Nigatedev\Framework\Console\Console($argv));
