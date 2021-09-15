@@ -58,6 +58,57 @@ The last command will create two files and update the controller injector.
 1. src/Controller/HomeController.php
 2. views/home.php
 ```
+### Routing
+#### Nigatedev framework have many ways to map a route.
+```php
+<?php
+    
+   /**
+    * === OPTION A ===
+    * Nigatedev framework routes mapping
+    *
+    * http://localhost:8000/home Output Welcome
+    */
+    $app->router->get("/home", function () { return "<h1>Welcome</h1>"; });
+    
+   /**
+    * === OPTION B ===
+    * Nigatedev framework routes mapping
+    *
+    * http://localhost:8000/contact run the contact method from ContactController
+    */
+    $app->router->get("/contact", [\App\Controller\ContactController::class, 'contact']); 
+  
+   /**
+    * === OPTION C ===
+    * Nigatedev framework routes mapping
+    *
+    * http://localhost:8000/home|about map many routes at once
+    */
+    $app->router->load([
+    "/home" => [\App\Controller\HomeController::class, 'home'],
+    "/about" => [\App\Controller\AboutController::class, 'about'],
+    ]); 
+  
+   /**
+    * === OPTION D ===
+    * Nigatedev framework routes mapping
+    *
+    * http://localhost:8000/home|about map many routes at once
+    */
+    $app->router->load([
+    "/home" => function () { return "<h1>Welcome</h1>"; },
+    "/about" => function () { return "<h1>Contact us</h>"; },
+    ]); 
+    
+   /**
+    * === OPTION E ===
+    * Nigatedev framework routes mapping
+    *
+    * http://localhost:8000/* don't take care about routing let the app do everything for you
+    */
+    $app->router->load(Loader::load("loader.php"));
+```
 ### [Nigatedev Dumper](https:/github.com/nigatedev/dumper)
 One of the powerful function called ``` dump() ``` is available anywhere in your project, and can be used to replace the default php ```var_dump() ``` function.
 #### Usage example
