@@ -1,5 +1,10 @@
 {
     "app_name": "Nigatedev",
     "app_version": "1.0",
-    "default_template": "twig"
+    "default_template": "twig",
+    "controller": {
+        "root_dir": "../",
+        "dir": "../src/Controller"
+}
+    
 }
