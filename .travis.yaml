@@ -1,0 +1,22 @@
+language: php
+
+php:
+    - '7.4'
+    - '8.0'
+
+install:
+    - 'composer selfupdate'
+    - 'composer install'
+
+jobs:
+    include:
+        -
+            name: 'PhpUnit'
+            stage: test
+            php: '7.4'
+            script: 'vendor/bin/phpunit --testsuite'
+        -
+            name: 'PhpStan'
+            stage: test
+            php: '7.4'
+            script: 'vendor/bin/phpstan analyse'
