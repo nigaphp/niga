@@ -25,7 +25,7 @@ It is strongly recommend to use [composer](https://getcomposer.org/) to install 
  
 **Note:** Nigatedev framework is not ready for production application at this time. 
 
-If you already have composer you can use the following command to create your web application with Nigatedev framework.
+If you already have composer installed you can use the following command to create your web application with Nigatedev framework.
 
 ```bash
 $ composer create-project nigatedev/nigatedev my-blog
