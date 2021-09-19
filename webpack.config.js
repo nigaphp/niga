@@ -7,12 +7,12 @@ module.exports = {
 
     plugins: [
         new miniCssExtractPlugin({
-            filename: "bundle.css",
+            filename: "app.css",
         })
     ],
     entry: "./assets/app.js",
     output: {
-        filename: "bundle.js",
+        filename: "app.js",
         path: path.resolve(__dirname, "./public/build")
     },
     module: {
