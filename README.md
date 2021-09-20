@@ -6,7 +6,9 @@ Nigatedev is a PHP framework for saving time by [**Abass Ben Cheik**](https://to
 <a href="https://github.com/nigatedev/nigatedev/pulls"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/nigatedev/nigatedev?color=0088ff" /> </a>
 <a href="https://github.com/nigatedev/nigatedev/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nigatedev/nigatedev?color=0088ff" /></a>
 
+<div align="center">
 <img width="100" src="https://github.com/nigatedev/nigatedev/blob/master/public/images/nigatedev.png" alt="Nigatedev"></img>
+</div>
 
 ## Prerequisites
 To use NigateDev framework please make sure that the following items are installed on your machine.
