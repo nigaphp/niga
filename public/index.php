@@ -1,4 +1,7 @@
-<?php declare(strict_types = 1);
+<?php 
+
+declare(strict_types = 1);
+
 /*
  * This file is part of the Nigatedev PHP framework package
  *
@@ -37,7 +40,7 @@ if (File::isFile(ROOT_DIR."/.env")) {
 $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 
 /** App load */
-$app->router->load(Loader::load("loader.php"));
+$app->controllerRegister(Loader::load("loader.php"));
 
 /** App run */
 $app->run();
