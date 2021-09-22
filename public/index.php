@@ -40,7 +40,7 @@ if (File::isFile(ROOT_DIR."/.env")) {
 $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 
 /** App load */
-$app->controllerRegister(Loader::load("loader.php"));
+$app->controllerLoader(Loader::load("loader.php"));
 
 /** App run */
 $app->run();
