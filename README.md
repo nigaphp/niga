@@ -63,6 +63,44 @@ The last command will create two files and update the controller injector.
 ```
 ### Routing
 #### Nigatedev framework have many ways to map a route.
+
+##### Option 1, into your controller
+
+```php
+<?php
+namespace App\Controller;
+
+use Nigatedev\FrameworkBundle\Controller\Controller;
+use Nigatedev\FrameworkBundle\Http\Request;
+use Nigatedev\FrameworkBundle\Attributes\Route;
+
+class SiteController extends Controller
+{
+    #[Route('/')]
+    public function home() {
+        return $this->render("home", [
+            "name" => "home"
+        ]);
+    }
+
+    #[Route('/contact')]
+    public function contact() {
+        return $this->render("contact", [
+            "name" => "contact"
+        ]);
+    }
+
+    #[Route('/about')]
+    public function about() {
+        return $this->render("about", [
+            "name" => "about"
+        ]);
+    }
+
+}
+
+```
+##### Options 2
 ```php
 <?php
     
