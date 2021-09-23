@@ -1,4 +1,5 @@
 ### App environment ###
+var/cache/dev/
 env.test.yaml
 ### END ###
 
