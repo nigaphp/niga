@@ -5,6 +5,9 @@
     "controller": {
         "root_dir": "../",
         "dir": "../src/Controller"
-}
-    
+    },
+    "entity": {
+        "dir": "../src/Entity"
+    }
+
 }
