@@ -7,7 +7,7 @@
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode=production --node-env=production --progress --color",
     "build:dev": "cross-env NODE_ENV=development webpack --mode=development --progress --color",
-    "build:prod": "cross-env NODE_ENV=development webpack --mode=production --node-env=production --progress --color",
+    "build:prod": "cross-env NODE_ENV=production webpack --mode=production --node-env=production --progress --color",
     "watch": "cross-env NODE_ENV=development webpack --watch --progress --color",
     "serve": "cross-env NODE_ENV=development webpack serve --static --open --progress --color"
   },
