@@ -1,7 +1,10 @@
 {
     "app_name": "Nigatedev",
     "app_version": "1.0",
-    "default_template": "twig",
+    "default_template": "diyan",
+    "security": {
+        "http_protocol": "http"
+    },
     "controller": {
         "dir": "../src/Controller"
     },
