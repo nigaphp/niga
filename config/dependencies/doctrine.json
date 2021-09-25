@@ -1,6 +1,10 @@
 {
     "connection": {
-        "driver": "pdo_sqlite",
+        "driver": "pdo_mysql",
+        "dbname": "demo",
+        "user": "demo",
+        "password": "1234",
+        "host": "localhost",
         "path": "data/database.sqlite"
     },
     "annotation": {
