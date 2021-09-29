@@ -1,7 +1,11 @@
-<phpunit colors="true" verbose="true" testdox="true">
+<phpunit
+bootstrap="./vendor/autoload.php"
+colors="true"
+verbose="true"
+testdox="true">
   <testsuites>
     <testsuite name="nigatedev">
-      <directory>tests</directory>
+      <directory>tests/</directory>
     </testsuite>
   </testsuites>
 </phpunit>
