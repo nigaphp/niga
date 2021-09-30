@@ -74,7 +74,7 @@ use Nigatedev\FrameworkBundle\Controller\Controller;
 use Nigatedev\FrameworkBundle\Http\Request;
 use Nigatedev\FrameworkBundle\Attributes\Route;
 
-class SiteController extends Controller
+class SiteController extends AbstractController
 {
     #[Route('/')]
     public function home() {
