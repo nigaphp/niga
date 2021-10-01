@@ -5,6 +5,7 @@ declare(strict_types = 1);
 use App\Trunk;
 use Nigatedev\FrameworkBundle\{
     Application\App,
+    Http\Request,
     Application\Configuration,
     Debugger\Debugger,
     Config\Loader
@@ -35,4 +36,4 @@ $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 $app->controllerLoader(Loader::load("loader.php"));
 
 /** App run */
-$app->run();
+$app->run(Request::fromGlobals());
