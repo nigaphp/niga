@@ -25,16 +25,16 @@ require_once($autoLoader);
 
 if (\file_exists(ROOT_DIR.DSP.".env")) {
     (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
-    if ((bool)(new Configuration())->getEnv("DEBUG_MODE") === true) {
+    if ((bool)Configuration::getEnv("DEBUG_MODE") === true) {
         Debugger::enableDebugMode();
     }
 }
 
 /** App start */
-$app = new App(ROOT_DIR, (new Trunk())->globConfig());
+$app = new App(ServerRequest::fromGlobals(), ROOT_DIR, (new Trunk())->globConfig());
 
 /** App load */
-$app->controllerLoader(Loader::load("loader.php"));
+$app->routesLoader(Loader::load("loader.php"));
 
 /** App run */
-$app->run(ServerRequest::fromGlobals());
+$app->run();

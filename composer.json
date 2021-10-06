@@ -28,6 +28,7 @@
         }
     },
     "config": {
+        "bin-dir": "bin",
         "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
@@ -48,9 +49,9 @@
           "@php -r \"file_exists('env.tests.yaml') || @copy('env.tests.example.yaml', 'env.tests.yaml');\""
           ],
       "phpstan": "phpstan analyse src/",
-      "tests": "phpunit tests/",
-      "phpcs-show": "phpcs",
-      "phpcs-fix": "phpcbf"
+      "tests": "phpunit",
+      "php-show": "phpcs",
+      "php-fix": "phpcbf"
     },
     "minimum-stability": "dev",
     "prefer-stable": true
