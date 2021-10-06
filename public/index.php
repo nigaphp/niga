@@ -3,6 +3,7 @@
 declare(strict_types = 1);
 
 use App\Trunk;
+use GuzzleHttp\Psr7\ServerRequest;
 use Nigatedev\FrameworkBundle\{
     Application\App,
     Http\Request,
@@ -36,4 +37,4 @@ $app = new App(ROOT_DIR, (new Trunk())->globConfig());
 $app->controllerLoader(Loader::load("loader.php"));
 
 /** App run */
-$app->run(Request::fromGlobals());
+$app->run(ServerRequest::fromGlobals());
