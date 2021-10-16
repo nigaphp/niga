@@ -1,7 +1,5 @@
 @import "./sass/global";
-
-body {
-    font-family:Sans-serif;
+@import "~bootstrap/scss/bootstrap";
 
     .be-container {
         text-align:center;
@@ -19,4 +17,3 @@ body {
         border-radius:2px;
         padding:1px
     }
-}
