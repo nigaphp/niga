@@ -44,10 +44,7 @@
     },
     "scripts": {
       "dev-server": "php -S localhost:8000 -t public/",
-      "post-root-package-install": [
-          "@php -r \"file_exists('.env') || @copy('.env.example', '.env');\"",
-          "@php -r \"file_exists('env.tests.yaml') || @copy('env.tests.example.yaml', 'env.tests.yaml');\""
-          ],
+      "post-root-package-install": ["@php -r \"file_exists('.env') || @copy('.env.example', '.env');\""],
       "phpstan": "phpstan analyse src/",
       "tests": "phpunit",
       "php-show": "phpcs",
