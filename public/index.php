@@ -31,7 +31,7 @@ if (\file_exists(ROOT_DIR.DSP.".env")) {
 }
 
 /** App start */
-$app = new App(ServerRequest::fromGlobals(), ROOT_DIR, (new Trunk())->globConfig());
+$app = new App(ServerRequest::fromGlobals(), ROOT_DIR, (new Trunk())->configGlobals());
 
 /** App load */
 $app->routesLoader(Loader::load("loader.php"));
