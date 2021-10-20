@@ -5,7 +5,6 @@ env.test.yaml
 
 ### dependencies ###
 vendor/
-composer.lock
 ### END ###
 
 ### nodejs ###
