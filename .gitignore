@@ -1,30 +1,20 @@
-### App environment ###
+### Cache ###
 var/cache/dev/
-env.test.yaml
+.phpunit.result.cache
 ### END ###
 
-### dependencies ###
+### Dependencies ###
 vendor/
+phpcs.xml
+phpunit.xml
+phpstan.neon
 ### END ###
 
-### nodejs ###
+### Nodejs ###
 node_modules
 package-lock.json
 ### END ###
 
 ### phpdotenv/phpdotenv ###
 .env
-### END ###
-
-### squizlabs/php_codesniffer ###
-phpcs.xml
-### END ###
-
-### phpunit/phpunit ###
-phpunit.xml
-.phpunit.result.cache
-### END ###
-
-### phpstan ###
-phpstan.neon
 ### END ###
