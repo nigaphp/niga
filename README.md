@@ -23,7 +23,7 @@ Nigatedev is a time-saving PHP framework written by [**Abass Ben Cheik**](https:
 $ composer create-project nigatedev/nigatedev site_name
 ```
 ## Basic usage
-It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository.
+It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository, if you want to become a contributor please contact abass@todaydevs.com
 
 If you already have composer installed you can use the following command to create your web application with Nigatedev framework.
 
@@ -32,7 +32,8 @@ $ composer create-project nigatedev/nigatedev site_name
 ```
 This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
 
-## Create a controller using [(Nigatedev Console Maker)](https://github.com/nigatedev/console) you have different ways to do this.
+## Controller
+Create a controller using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default
 ```bash
 $ bin/niga make:controller HomeController
@@ -47,8 +48,24 @@ What happens after creating a controller using the nigatedev console?
 2. views/home.php # Create the file views/home.php or views/home.twig depending on the chosen template engine twig|diyan, by default diyan is used !
 3. config/loader.php # Update controllers loader
 ```
-## Routing
+## Entity
+Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
+##### 1. default
+```bash
+$ bin/niga make:entity ProductEntity
+```
+##### 2. shortcut
+```bash
+$ bin/niga m:e ProductEntity
+```
+Then following the instructions.
 
+What happens after creating an entity using the nigatedev console?
+It will only generate one file for you
+```bash
+1. src/Entity/ProductEntity.php # The entity class
+```
+## Routing
 ```php
 <?php
 namespace App\Controller;
