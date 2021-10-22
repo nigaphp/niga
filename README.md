@@ -60,14 +60,14 @@ use Nigatedev\FrameworkBundle\Attributes\Route;
 class SiteController extends AbstractController
 {
     #[Route('/', name:'home', method:'get')]
-    public function home(Request $request) {
+    public function home() {
         return $this->render("home", [
             "name" => "home"
         ]);
     }
 
     #[Route('/contact', name:'contact', method:'get|post')]
-    public function contact() {
+    public function contact(Request $request) {
         return $this->render("contact", [
             "name" => "contact"
         ]);
