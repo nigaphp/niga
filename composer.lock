@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "75aace109c0d302e157d25c2615f87e3",
+    "content-hash": "1563bd6ce9bb08a08d3c5ae030aa8ff7",
     "packages": [
         {
             "name": "composer/package-versions-deprecated",
@@ -1426,16 +1426,16 @@
         },
         {
             "name": "nigatedev/framework-bundle",
-            "version": "v1.2.9",
+            "version": "v1.3.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nigatedev/framework-bundle.git",
-                "reference": "e9c87b863ba7c2fe9bb8e3493e4f50ddebc5bb8c"
+                "reference": "e934a024203ab99f231f0c00d5169b78de7e6730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nigatedev/framework-bundle/zipball/e9c87b863ba7c2fe9bb8e3493e4f50ddebc5bb8c",
-                "reference": "e9c87b863ba7c2fe9bb8e3493e4f50ddebc5bb8c",
+                "url": "https://api.github.com/repos/nigatedev/framework-bundle/zipball/e934a024203ab99f231f0c00d5169b78de7e6730",
+                "reference": "e934a024203ab99f231f0c00d5169b78de7e6730",
                 "shasum": ""
             },
             "require": {
@@ -1484,9 +1484,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nigatedev/framework-bundle/issues",
-                "source": "https://github.com/nigatedev/framework-bundle/tree/v1.2.9"
+                "source": "https://github.com/nigatedev/framework-bundle/tree/v1.3.1"
             },
-            "time": "2021-10-20T19:34:00+00:00"
+            "time": "2021-10-23T20:18:18+00:00"
         },
         {
             "name": "nigatedev/parser",
@@ -5303,7 +5303,10 @@
     "prefer-lowest": false,
     "platform": {
         "php": "^7.3|^8.0",
-        "ext-pdo": "*"
+        "ext-pdo": "*",
+        "ext-pdo_mysql": "*",
+        "ext-pdo_pgsql": "*",
+        "ext-pdo_sqlite": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.1.0"
