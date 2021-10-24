@@ -12,6 +12,7 @@ Nigatedev is a time-saving PHP framework written by [**Abass Ben Cheik**](https:
 
 ## Prerequisites
 ```json
+"php": "^7.3|^8.0",
 "ext-pdo_mysql": "*",
 "ext-pdo_pgsql": "*",
 "ext-pdo_sqlite": "*",
