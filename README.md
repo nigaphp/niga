@@ -93,4 +93,4 @@ class SiteController extends AbstractController
 
 ```
 ## Contact
-If you want to contribute to this famous framework or if you found you found a bug, Please contact us here abass@todaysdev.com / nigatedev@gmail.com
+If you want to contribute to this famous framework or if you found any bug, Please contact us here abass@todaysdev.com / nigatedev@gmail.com
