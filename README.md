@@ -34,11 +34,11 @@ This command will create a web application in the site_name directory on your ma
 
 ## Controller
 Create a controller using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
-##### 1. default
+##### 1. default example
 ```bash
 $ bin/niga make:controller HomeController
 ```
-##### 2. shortcut
+##### 2. shortcut example
 ```bash
 $ bin/niga m:c HomeController
 ```
@@ -50,11 +50,11 @@ What happens after creating a controller using the nigatedev console?
 ```
 ## Entity
 Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
-##### 1. default
+##### 1. default example
 ```bash
 $ bin/niga make:entity ProductEntity
 ```
-##### 2. shortcut
+##### 2. shortcut example
 ```bash
 $ bin/niga m:e ProductEntity
 ```
