@@ -1,19 +1,26 @@
 <?php
 
-use Nigatedev\FrameworkBundle\Application\Configuration;
 use Nigatedev\FrameworkBundle\Config\ORMConfig;
-use Nigatedev\Framework\Parser\JSONParser;
-use Nigatedev\Framework\Parser\Exception\ParseException;
+use Nigatedev\FrameworkBundle\Database\DatabaseConfiguration;
 
 require_once "./config/env.loader.php";
 
-try {
-    $getOrmConfig = JSONParser::parseJFile(Configuration::getAppRoot(), "/config/dependencies/doctrine.json");
-} catch (ParseException $e) {
-    die($e->getMessage() . " In file " . $e->getFile() . " On line " . $e->getLine());
-}
+$dbConfig = new DatabaseConfiguration();
 
 $entityManager = (new ORMConfig(__DIR__))->getEntityManagerConfig(
-    $getOrmConfig["connection"],
-    $getOrmConfig["annotation"]
+    [
+        "driver" => "pdo_".$dbConfig->getDriver(),
+        "dbname" => $dbConfig->getDbName(),
+        "user"   => $dbConfig->getUser(),
+        "password" => $dbConfig->getPassword(),
+        "host" => $dbConfig->getHost(),
+        "path" => str_replace("../", "./", $dbConfig->getPath())
+    ],
+    [
+        "dir" => ["src/Entity"],
+        "mode" => true,
+        "cache" => null,
+        "proxyDir" => null,
+        "reader" => false
+    ]
 );

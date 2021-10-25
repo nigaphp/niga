@@ -1426,16 +1426,16 @@
         },
         {
             "name": "nigatedev/framework-bundle",
-            "version": "v1.3.1",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nigatedev/framework-bundle.git",
-                "reference": "e934a024203ab99f231f0c00d5169b78de7e6730"
+                "reference": "796c74812142c3d59b11a04996db77eba068a105"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nigatedev/framework-bundle/zipball/e934a024203ab99f231f0c00d5169b78de7e6730",
-                "reference": "e934a024203ab99f231f0c00d5169b78de7e6730",
+                "url": "https://api.github.com/repos/nigatedev/framework-bundle/zipball/796c74812142c3d59b11a04996db77eba068a105",
+                "reference": "796c74812142c3d59b11a04996db77eba068a105",
                 "shasum": ""
             },
             "require": {
@@ -1484,9 +1484,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nigatedev/framework-bundle/issues",
-                "source": "https://github.com/nigatedev/framework-bundle/tree/v1.3.1"
+                "source": "https://github.com/nigatedev/framework-bundle/tree/v1.3.3"
             },
-            "time": "2021-10-23T20:18:18+00:00"
+            "time": "2021-10-24T20:53:51+00:00"
         },
         {
             "name": "nigatedev/parser",
