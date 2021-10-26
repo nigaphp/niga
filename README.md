@@ -1,4 +1,4 @@
-## NigateDev framework
+# NigateDev framework
 Nigatedev is a time-saving PHP framework written by [**Abass Ben Cheik**](https://github.com/abass-bencheik/) and [contributors](https://github.com/nigatedev/nigatedev/graphs/contributors)
 
 <a href="https://packagist.org/packages/nigatedev/nigatedev" title="version"><img src="https://img.shields.io/packagist/v/nigatedev/nigatedev.svg?style=flat-square" /></a>
