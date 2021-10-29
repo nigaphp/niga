@@ -21,7 +21,6 @@
         "php": "^7.3|^8.0",
         "ext-pdo": "*",
         "ext-pdo_mysql": "*",
-        "ext-pdo_pgsql": "*",
         "ext-pdo_sqlite": "*",
         "nigatedev/framework-bundle": "^1.0"
     },
