@@ -19,6 +19,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
+        "ext-xmlwriter": "*",
         "nigatedev/framework-bundle": "^1.0"
     },
     "autoload-dev": {
