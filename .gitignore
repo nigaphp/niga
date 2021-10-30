@@ -4,6 +4,7 @@ var/cache/dev/
 ### END ###
 
 ### Dependencies ###
+composer.lock
 vendor/
 phpcs.xml
 phpunit.xml
