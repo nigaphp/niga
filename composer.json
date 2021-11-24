@@ -1,6 +1,6 @@
 {
     "name": "nigatedev/nigatedev",
-    "description": "Nigatedev PHP framework for saving time !",
+    "description": "Nigatedev is a time-saving PHP framework",
     "type": "project",
     "keywords": ["framework", "nigatedev"],
     "license": "MIT",
@@ -13,7 +13,7 @@
     "authors": [
         {
             "name": "Abass Ben Cheik",
-            "email": "abass@todaysdev.com",
+            "email": "abass@abasslab.com",
             "role": "Lead Developer"
         }
     ],
