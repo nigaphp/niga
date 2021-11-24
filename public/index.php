@@ -2,12 +2,10 @@
 
 declare(strict_types = 1);
 
-use App\Trunk;
 use GuzzleHttp\Psr7\ServerRequest;
 use Nigatedev\FrameworkBundle\{
     Application\App,
     Http\Request,
-    Application\Configuration,
     Debugger\Debugger,
     Config\Loader
 };
