@@ -50,6 +50,7 @@ What happens after creating a controller using the nigatedev console?
 2. views/home.php # Create the file views/home.php or views/home.twig depending on the chosen template engine twig|diyan, by default diyan is used !
 3. config/loader.php # Update controllers loader
 ```
+And now you can navigate to http://localhost:8080/home for example
 ## Entity
 Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default example
