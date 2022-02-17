@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": "^7.4|^8.0",
-        "nigatedev/framework-bundle": "^1.0"
+        "nigatedev/framework-bundle": "*"
     },
     "autoload-dev": {
         "psr-4": {
