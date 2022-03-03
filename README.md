@@ -34,7 +34,7 @@ $ composer create-project nigatedev/nigatedev site_name
 ```
 This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
 
-## Controller
+## Controller Maker
 Create a controller using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default example
 ```bash
@@ -51,7 +51,7 @@ What happens after creating a controller using the nigatedev console?
 3. config/loader.php # Update controllers loader
 ```
 And now you can navigate to http://localhost:8080/home for example
-## Entity
+## Entity Maker
 Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default example
 ```bash
