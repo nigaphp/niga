@@ -12,6 +12,6 @@
     </div>
     <p class="text-danger">ERROR: <code>404 Page Not Found!</code></p>
       You are seeing this because the debug mode is enabled.
-    <p>You can use the following command <span><code>bin/niga make:make HomeController</code></span> to create a route for your /home page</p>
+    <p>You can use the following command <span><code>bin/niga make:c HomeController</code></span> to create a route for your /home page</p>
 </div>
 <?php endif ?>
