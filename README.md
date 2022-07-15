@@ -61,7 +61,7 @@ $ bin/niga make:entity ProductEntity
 ```bash
 $ bin/niga m:e ProductEntity
 ```
-Then following the instructions.
+Then follow the instructions.
 
 What happens after creating an entity using the nigatedev console?
 It will only generate one file for you
