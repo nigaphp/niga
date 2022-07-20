@@ -2,7 +2,7 @@
 <div class="container">
   <h1 class="text-danger">Oops 🙄 404 Page Not Found!</h1>
   <p>Sorry this page is not found on this server.</code></p>
-  <small>Create a route for your <a href="/home">home page?</a> <code>bin/niga make:make HomeController</code></small>
+  <small>Create a route for your <a href="/home">home page?</a> <code>bin/niga make:controller HomeController</code></small>
 </div>
 <?php else: ?>
 <div class="container">
