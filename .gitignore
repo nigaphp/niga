@@ -16,6 +16,10 @@ node_modules
 package-lock.json
 ### END ###
 
+### bin ###
+bin/
+### END ###
+
 ### phpdotenv/phpdotenv ###
 .env
 ### END ###
