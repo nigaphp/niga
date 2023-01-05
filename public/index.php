@@ -1,11 +1,10 @@
 <?php
 
-declare(strict_types = 1);
+declare(strict_types=1);
 
 use GuzzleHttp\Psr7\ServerRequest;
 use Nigatedev\FrameworkBundle\{
     Application\App,
-    Http\Request,
     Debugger\Debugger,
     Config\Loader
 };
@@ -13,7 +12,7 @@ use Nigatedev\FrameworkBundle\{
 define("ROOT_DIR", dirname(__DIR__));
 define("DSP", DIRECTORY_SEPARATOR);
 
-$autoLoader = ROOT_DIR.DSP."vendor".DSP."autoload.php";
+$autoLoader = ROOT_DIR . DSP . "vendor" . DSP . "autoload.php";
 
 if (!file_exists($autoLoader)) {
     throw new RuntimeException('Please install dependencies with "composer install" to run this script.');
@@ -21,7 +20,7 @@ if (!file_exists($autoLoader)) {
 
 require_once($autoLoader);
 
-if (\file_exists(ROOT_DIR.DSP.".env")) {
+if (\file_exists(ROOT_DIR . DSP . ".env")) {
     (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
     if ((bool)$_ENV["DEBUG_MODE"] === true) {
         Debugger::enableDebugMode();

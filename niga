@@ -9,24 +9,27 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
- 
- if(file_exists(dirname(dirname(__DIR__))."/autoload.php")
-    || file_exists(dirname(__DIR__)."/vendor/autoload.php")) {
+
+if (
+    file_exists("/autoload.php")
+    || file_exists("/vendor/autoload.php")
+) {
     foreach ([
-     dirname(dirname(__DIR__))."/autoload.php",
-     dirname(__DIR__)."/vendor/autoload.php"
+        "/autoload.php", "/vendor/autoload.php"
     ] as $loder) {
-        if(file_exists($loder)) {
-           require_once $loder;
-        break;
+        if (file_exists($loder)) {
+            require_once $loder;
+            break;
         }
-  }
+    }
 } else {
-    fwrite(STDERR,
-    "\33[41mFATAL:\nNigatedev (CLI) can't find composer auto loader!"
-    ."\33[0m\n\n\33[44mINFO:\nPlease install dependencies with 'composer install' to run this script"
-    .PHP_EOL);
-    
+    fwrite(
+        STDERR,
+        "\33[41mFATAL:\nNigatedev (CLI) can't find composer auto loader!"
+            . "\33[0m\n\n\33[44mINFO:\nPlease install dependencies with 'composer install' to run this script"
+            . PHP_EOL
+    );
+
     exit(1);
 }
 
