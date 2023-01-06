@@ -11,11 +11,11 @@
  */
 
 if (
-    file_exists("/autoload.php")
-    || file_exists("/vendor/autoload.php")
+    file_exists("./autoload.php")
+    || file_exists("./vendor/autoload.php")
 ) {
     foreach ([
-        "/autoload.php", "/vendor/autoload.php"
+        "./autoload.php", "./vendor/autoload.php"
     ] as $loder) {
         if (file_exists($loder)) {
             require_once $loder;

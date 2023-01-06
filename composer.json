@@ -22,15 +22,9 @@
       "role": "Lead Developer"
     }
   ],
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "https://github.com/abass-dev/framework-bundle"
-    }
-  ],
   "require": {
     "php": "^7.4|^8.0",
-    "nigatedev/framework-bundle": "dev-master"
+    "nigatedev/framework-bundle": "^1.0"
   },
   "autoload-dev": {
     "psr-4": {
