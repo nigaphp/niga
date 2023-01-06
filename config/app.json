@@ -1,15 +1,19 @@
 {
-    "app_name": "Nigatedev",
-    "app_version": "1.0",
-    "default_template": "diyan",
-    "security": {
-        "http_protocol": "http"
-    },
-    "controller": {
-        "dir": "../src/Controller"
-    },
-    "entity": {
-        "dir": "../src/Entity"
-    }
-
+  "app_name": "Nigatedev",
+  "app_version": "1.0",
+  "default_template": "diyan",
+  "security": {
+    "http_protocol": "http"
+  },
+  "controller": {
+    "dir": "../src/Controller"
+  },
+  "entity": {
+    "dir": "../src/Entity"
+  },
+  "server": {
+    "port": "8000",
+    "host": "127.0.0.1",
+    "publicPath": "public"
+  }
 }
