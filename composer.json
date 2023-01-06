@@ -24,7 +24,7 @@
   ],
   "require": {
     "php": "^7.4|^8.0",
-    "nigatedev/framework-bundle": "^1.0"
+    "nigatedev/framework-bundle": "2.x-dev"
   },
   "autoload-dev": {
     "psr-4": {
