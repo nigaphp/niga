@@ -18,31 +18,31 @@ Nigatedev is a time-saving PHP framework coded by [**Abass Ben Cheik**](https://
 "ext-pdo_sqlite": "*",
 "composer": "^2.0"
 ```
-**Note:** Nigatedev framework is not ready for production application at this time. 
+**Note:** Nigatedev framework is not ready for production application for now. 
 
 ## Installation
 ```bash
-$ composer create-project nigatedev/nigatedev site_name
+composer create-project nigatedev/nigatedev site_name
 ```
 ## Basic usage
-It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository, if you want to become a contributor please contact abass@todaydevs.com
+It is strongly recommend to use [composer](https://getcomposer.org/) to install [Nigatedev framework from packagist](https://packagist.org/packages/nigatedev/nigatedev) instead of cloning this repository, if you want to become a contributor please contact abass@abassdev.com
 
 If you already have composer installed you can use the following command to create your web application with Nigatedev framework.
 
 ```bash
-$ composer create-project nigatedev/nigatedev site_name
+composer create-project nigatedev/nigatedev site_name
 ```
-This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://todaysdev.com/en/nigatedev/docs).
+This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [Nigatedev Docs](https://abassdev.com/en/nigatedev/docs).
 
 ## Controller Maker
 Create a controller using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default example
 ```bash
-$ bin/niga make:controller HomeController
+niga make:controller HomeController
 ```
 ##### 2. shortcut example
 ```bash
-$ bin/niga m:c HomeController
+niga m:c HomeController
 ```
 What happens after creating a controller using the nigatedev console?
 ```bash
@@ -50,16 +50,21 @@ What happens after creating a controller using the nigatedev console?
 2. views/home.php # Create the file views/home.php or views/home.twig depending on the chosen template engine twig|diyan, by default diyan is used !
 3. config/loader.php # Update controllers loader
 ```
+## Development Server
+Run the command below to start a development server, by default... (HOST=127.0.0.1, PORT=8000, PUBLIC_PATH=public) you can change this in the config file %APP_ROOT%/config/app.json
+```bash
+niga run:dev
+```
 And now you can navigate to http://localhost:8080/home for example
 ## Entity Maker
 Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
 ##### 1. default example
 ```bash
-$ bin/niga make:entity ProductEntity
+niga make:entity ProductEntity
 ```
 ##### 2. shortcut example
 ```bash
-$ bin/niga m:e ProductEntity
+niga m:e ProductEntity
 ```
 Then follow the instructions.
 
