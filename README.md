@@ -57,7 +57,7 @@ niga run:dev
 ```
 And now you can navigate to http://localhost:8080/home for example
 ## Entity Maker
-Create an entity using [(Nigatedev Console Maker)](https://github.com/nigatedev/console)
+Create an entity using [(Nigatedev Console Application)](https://github.com/nigatedev/console)
 ##### 1. default example
 ```bash
 niga make:entity ProductEntity
@@ -73,7 +73,7 @@ It will only generate one file for you
 ```bash
 1. src/Entity/ProductEntity.php # The entity class
 ```
-## Routing
+## Routing System 
 ```php
 <?php
 namespace App\Controller;
@@ -96,9 +96,10 @@ class SiteController extends AbstractController
         return $this->render("contact", [
             "name" => "contact"
         ]);
+        ]);
     }
 }
 
 ```
-## Contact
-If you want to contribute to this famous framework or if you found any bug, Please contact us here abasslab0@gmail.com / nigatedev@gmail.com / abassthedev@gmail.com
+## Contact us
+If you want to contribute to this famous framework or if you found any bug, Please contact us here abass@abassdev.com / nigatedev@gmail.com / abassthedev@gmail.com
