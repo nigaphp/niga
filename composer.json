@@ -49,6 +49,12 @@
     "dev-server": "php -S localhost:8000 -t public/",
     "post-root-package-install": [
       "@php -r \"file_exists('.env') || @copy('.env.example', '.env');\""
+    ],
+    "pre-update-cmd": [
+      "@php -r \"file_exists('.env') || @copy('.env.example', '.env');\""
+    ],
+    "pre-install-cmd": [
+      "@php -r \"file_exists('.env') || @copy('.env.example', '.env');\""
     ]
   },
   "minimum-stability": "dev",
