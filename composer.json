@@ -1,10 +1,11 @@
 {
-  "name": "nigatedev/nigatedev",
-  "description": "Nigatedev is a time-saving PHP framework",
+  "name": "niga/niga",
+  "description": "Niga Framework",
   "type": "project",
   "keywords": [
     "framework",
-    "nigatedev"
+    "niga",
+    "mvc"
   ],
   "license": "MIT",
   "autoload": {
@@ -17,8 +18,8 @@
   },
   "authors": [
     {
-      "name": "Abass Ben Cheik",
-      "email": "abass@abasslab.com",
+      "name": "Abass Dev",
+      "email": "abass@abassdev.com",
       "role": "Lead Developer"
     }
   ],
