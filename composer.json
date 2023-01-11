@@ -1,6 +1,6 @@
 {
   "name": "niga/niga",
-  "description": "Niga Framework",
+  "description": "Niga framework",
   "type": "project",
   "keywords": [
     "framework",
@@ -20,12 +20,13 @@
     {
       "name": "Abass Dev",
       "email": "abass@abassdev.com",
-      "role": "Lead Developer"
+      "role": "Lead Developer",
+      "homepage": "https://abassdev.com"
     }
   ],
   "require": {
     "php": "^7.4|^8.0",
-    "nigatedev/framework-bundle": "2.x-dev"
+    "niga/framework": "2.x-dev"
   },
   "autoload-dev": {
     "psr-4": {

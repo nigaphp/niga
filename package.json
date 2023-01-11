@@ -2,7 +2,7 @@
   "private": true,
   "license": "UNLICENSED",
   "bugs": {
-    "url": "https://github.com/nigatedev/nigatedev/issues"
+    "url": "https://github.com/nigaphp/niga/issues"
   },
   "scripts": {
     "build": "cross-env NODE_ENV=production webpack --mode=production --node-env=production --progress --color",

@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 use GuzzleHttp\Psr7\ServerRequest;
-use Nigatedev\FrameworkBundle\{
+use Niga\Framework\{
     Application\App,
     Debugger\Debugger,
     Config\Loader

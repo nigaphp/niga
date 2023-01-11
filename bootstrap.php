@@ -1,7 +1,7 @@
 <?php
 
-use Nigatedev\FrameworkBundle\Config\ORMConfig;
-use Nigatedev\FrameworkBundle\Database\DatabaseConfiguration;
+use Niga\Framework\Config\ORMConfig;
+use Niga\Framework\Database\DatabaseConfiguration;
 
 require_once "./config/env.loader.php";
 
@@ -9,7 +9,7 @@ $dbConfig = new DatabaseConfiguration();
 
 $entityManager = (new ORMConfig(__DIR__))->getEntityManagerConfig(
     [
-        "driver" => "pdo_".$dbConfig->getDriver(),
+        "driver" => "pdo_" . $dbConfig->getDriver(),
         "dbname" => $dbConfig->getDbName(),
         "user"   => $dbConfig->getUser(),
         "password" => $dbConfig->getPassword(),

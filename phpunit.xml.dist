@@ -4,7 +4,7 @@ colors="true"
 verbose="true"
 testdox="true">
   <testsuites>
-    <testsuite name="nigatedev">
+    <testsuite name="niga">
       <directory>tests/</directory>
     </testsuite>
   </testsuites>

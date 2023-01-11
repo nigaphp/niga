@@ -2,7 +2,7 @@
 <?php
 
 /*
- * This file is part of the Nigatedev framework package.
+ * This file is part of the Niga framework package.
  *
  * (c) Abass Ben Cheik <abass@todaysdev.com>
  * 
@@ -25,7 +25,7 @@ if (
 } else {
     fwrite(
         STDERR,
-        "\33[41mFATAL:\nNigatedev (CLI) can't find composer auto loader!"
+        "\33[41mFATAL:\nNiga (CLI) can't find composer auto loader!"
             . "\33[0m\n\n\33[44mINFO:\nPlease install dependencies with 'composer install' to run this script"
             . PHP_EOL
     );
@@ -33,4 +33,4 @@ if (
     exit(1);
 }
 
-(new Nigatedev\Framework\Console\Console($argv));
+(new Niga\Framework\Console\Console($argv));
