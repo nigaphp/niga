@@ -106,7 +106,7 @@ It will only generate one file for you
 <?php
 namespace App\Controller;
 
-use Niga\Framework\Controller\Controller;
+use Niga\Framework\Controller\AbstractController;
 use Niga\Framework\Http\Request;
 use Niga\Framework\Attributes\Route;
 
