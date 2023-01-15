@@ -124,7 +124,6 @@ class SiteController extends AbstractController
         return $this->render("contact", [
             "name" => "contact"
         ]);
-        ]);
     }
 }
 
