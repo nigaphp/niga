@@ -22,7 +22,7 @@ require_once($autoLoader);
 
 if (\file_exists(ROOT_DIR . DSP . ".env")) {
     (Dotenv\Dotenv::createImmutable(ROOT_DIR))->load();
-    if ((bool)$_ENV["DEBUG_MODE"] === true) {
+    if ((bool)$_ENV["DEBUG_MODE"]) {
         Debugger::enableDebugMode();
     }
 }
