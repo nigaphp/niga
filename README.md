@@ -8,7 +8,7 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 <a href="https://github.com/nigaphp/niga/issues"><img alt="Issues" src="https://img.shields.io/github/issues/nigaphp/niga?color=0088ff" /></a>
 
 <div align="center">
-<img width="100" src="https://github.com/nigaphp/niga/blob/master/public/images/niga.png" alt="Niga"></img>
+<img width="100" src="https://github.com/nigaphp/niga/blob/2.x/public/images/niga.png" alt="Niga"></img>
 </div>
 
 ## Prerequisites
