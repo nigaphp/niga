@@ -1,6 +1,6 @@
 # Niga framework
 
-Niga is a time-saving PHP framework coded by [**Abass Ben Cheik**](https://github.com/abass-dev/) and [contributors](https://github.com/nigaphp/niga/graphs/contributors)
+Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/abass-dev/) and [contributors](https://github.com/nigaphp/niga/graphs/contributors)
 
 <a href="https://packagist.org/packages/nigaphp/niga" title="version"><img src="https://img.shields.io/packagist/v/nigaphp/niga.svg?style=flat-square" /></a>
 <a href="https://github.com/nigaphp/niga/blob/master/LICENSE" title="license"><img src="https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square" /></a>
