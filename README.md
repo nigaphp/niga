@@ -13,6 +13,7 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 
 ## Prerequisites
 
+
 ```json
 "php": "^7.4|^8.0",
 "ext-pdo_mysql": "*",
