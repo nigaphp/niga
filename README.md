@@ -22,110 +22,81 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 
 **Note:** Niga framework is not ready for production application for now.
 
+### [Take a look at the documentation website](https://docs.nigaphp.abassdev.com/)
+
+# Getting Started
+
+
+Let's discover **NigaPHP Framework in 5 minutes**.
+
+
+Get started by **creating a new Website**.
+
+
 ## Installation
 
 ```bash
 composer create-project nigaphp/niga site_name
 ```
 
-## Basic usage
+You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
 
-It is strongly recommend to use [composer](https://getcomposer.org/) to install [Niga framework from packagist](https://packagist.org/packages/nigaphp/niga) instead of cloning this repository, if you want to become a contributor please contact abass@abassdev.com
+The command also installs all necessary dependencies you need to run NigaPHP.
 
-If you already have composer installed you can use the following command to create your web application with Niga framework.
+## Development server
+
+Change directory to your new website `my-website`
 
 ```bash
-composer create-project nigaphp/niga site_name
+cd my-website
+niga run:dev
 ```
 
-This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [NigaPHP Docs](https://abassdev.com/en/nigaphp/docs).
+Default values **[HOST=localhost, PORT=8000, PUBLIC_PATH=public]** you can change this in the config file `%APP_ROOT%/config/app.json`
 
-## Controller Maker
+Then open the this link in your web browser http://localhost:8000/.
 
-Create a controller using [(NigaPHP Console Maker)](https://github.com/nigaphp/console)
 
-##### 1. default example
+## Create a controller
 
 ```bash
 niga make:controller HomeController
 ```
+In this situation, we are creating a controller for the **home** page.
 
-##### 2. shortcut example
+This command will create two new files for us.
+1. `src/Controler/HomeController.php`
 
-```bash
-niga m:c HomeController
-```
+Here is your new controller class.
 
-What happens after creating a controller using the niga console?
-
-```bash
-1. src/Controller/HomeController.php # Create controller class
-2. views/home.php # Create the file views/home.php or views/home.twig depending on the chosen template engine twig|diyan, by default diyan is used !
-3. config/loader.php # Update controllers loader
-```
-
-## Development Server
-
-Run the command below to start a development server, by default... (HOST=127.0.0.1, PORT=8000, PUBLIC_PATH=public) you can change this in the config file %APP_ROOT%/config/app.json
-
-```bash
-niga run:dev
-```
-
-And now you can navigate to http://localhost:8080/home for example
-
-## Entity Maker
-
-Create an entity using [(Niga Console Application)](https://github.com/nigaphp/console)
-
-##### 1. default example
-
-```bash
-niga make:entity ProductEntity
-```
-
-##### 2. shortcut example
-
-```bash
-niga m:e ProductEntity
-```
-
-Then follow the instructions.
-
-What happens after creating an entity using the niga console?
-It will only generate one file for you
-
-```bash
-1. src/Entity/ProductEntity.php # The entity class
-```
-
-## Routing System
-
-```php
+```php showLineNumbers
 <?php
 namespace App\Controller;
 
 use Niga\Framework\Controller\AbstractController;
-use Niga\Framework\Http\Request;
 use Niga\Framework\Attributes\Route;
 
 class SiteController extends AbstractController
 {
-    #[Route('/', name:'home', method:'get')]
+    #[Route('/home', name:'home', method:'get')]
     public function home() {
         return $this->render("home", [
             "name" => "home"
         ]);
     }
 
-    #[Route('/contact', name:'contact', method:'get|post')]
-    public function contact(Request $request) {
-        return $this->render("contact", [
-            "name" => "contact"
-        ]);
-    }
 }
+```
 
+2. `views/home.php`
+
+And this is the view to rendered.
+
+```php showLineNumbers
+<?php if ($cName && $cPath) : ?>
+    <h3>Hello <span class='be-color-py be-code'><?= $cName ?></span></h3>
+    <p>Your <span class='be-color-py be-code'><?= $cName ?></span> class is located at <span class='be-color-py be-code'><?= $cPath ?></span> !</p>
+<?php endif ?>
 ```
 
 ## Contact us
