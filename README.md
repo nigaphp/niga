@@ -20,7 +20,7 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 5. ZIP PHP EXT
 6. MBSTRING PHP EXT
 
-**Note:** Niga framework is not ready for production application for now.
+**Note:** Niga framework is not ready for production application yet.
 
 ### [Take a look at the documentation website](https://docs.nigaphp.abassdev.com/)
 
