@@ -13,14 +13,12 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 
 ## Prerequisites
 
-
-```json
-"php": "^7.4|^8.0",
-"ext-pdo_mysql": "*",
-"ext-pdo_pgsql": "*",
-"ext-pdo_sqlite": "*",
-"composer": "^2.0"
-```
+1. PHP => 8.0
+2. PHP Composer => 2.0
+3. PDO PHP EXT
+4. XML PHP EXT
+5. ZIP PHP EXT
+6. MBSTRING PHP EXT
 
 **Note:** Niga framework is not ready for production application for now.
 
@@ -40,11 +38,11 @@ If you already have composer installed you can use the following command to crea
 composer create-project nigaphp/niga site_name
 ```
 
-This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [Niga Docs](https://abassdev.com/en/niga/docs).
+This command will create a web application in the site_name directory on your machine. For a complete documentation, have a look at [NigaPHP Docs](https://abassdev.com/en/nigaphp/docs).
 
 ## Controller Maker
 
-Create a controller using [(Niga Console Maker)](https://github.com/niga/console)
+Create a controller using [(NigaPHP Console Maker)](https://github.com/nigaphp/console)
 
 ##### 1. default example
 
@@ -78,7 +76,7 @@ And now you can navigate to http://localhost:8080/home for example
 
 ## Entity Maker
 
-Create an entity using [(Niga Console Application)](https://github.com/niga/console)
+Create an entity using [(Niga Console Application)](https://github.com/nigaphp/console)
 
 ##### 1. default example
 
