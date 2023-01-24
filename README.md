@@ -76,7 +76,7 @@ namespace App\Controller;
 use Niga\Framework\Controller\AbstractController;
 use Niga\Framework\Attributes\Route;
 
-class SiteController extends AbstractController
+class HomeController extends AbstractController
 {
     #[Route('/home', name:'home', method:'get')]
     public function home() {
