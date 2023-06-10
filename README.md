@@ -15,10 +15,11 @@ Niga is a time-saving PHP framework coded by [**Abass Dev**](https://github.com/
 
 1. PHP => 8.0
 2. PHP Composer => 2.0
-3. PDO PHP EXT
-4. XML PHP EXT
-5. ZIP PHP EXT
-6. MBSTRING PHP EXT
+3. PDO
+4. XML
+5. ZIP
+6. MBSTRING 
+7.
 
 **Note:** Niga framework is not ready for production application yet.
 
