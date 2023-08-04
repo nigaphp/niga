@@ -101,4 +101,4 @@ And this is the view to rendered.
 
 ## Contact us
 
-If you want to contribute to this famous framework or if you found any bug, Please contact us here abass@abassdev.com / nigaphp@gmail.com / abassthedev@gmail.com
+If you want to contribute to this famous framework or if you found any bug, Please contact us on abass@abassdev.com / nigaphp@gmail.com / abassthedev@gmail.com
