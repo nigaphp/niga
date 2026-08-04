@@ -1,6 +1,6 @@
 # Niga Framework
 
-NigaPHP is a lightweight PHP web application framework designed to simplify and accelerate the development process for PHP developers. Initially created by [Abass Dev](https://abassdev.com), it is now maintained and contributed to by a community of developers.
+NigaPHP is a lightweight PHP web application framework designed to simplify and accelerate the development process for PHP developers. Initially created by [Abass Alzouma](https://abass.wanecrea.com), it is now maintained and contributed to by a community of developers.
 
 ## Badges
 
